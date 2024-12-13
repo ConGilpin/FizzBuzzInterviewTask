@@ -67,7 +67,7 @@ namespace FizzBuzzLib.Tests
             var output = fizzBuzzClass.FizzBuzzValuesForRange(1,10);
 
             //assert
-            output.Should().ContainInOrder("1", "2", "Fizz", "4", "“Buzz ", "Fizz", "7", "8", "Fizz", "Buzz");
+            output.Should().ContainInOrder("1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz");
         }
         #endregion
     }
