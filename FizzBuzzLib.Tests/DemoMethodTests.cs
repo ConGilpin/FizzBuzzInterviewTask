@@ -57,7 +57,6 @@ namespace FizzBuzzLib.Tests
         #endregion
 
         #region Test Cases For FizzBuzzValuesForRange
-        //Just for fun
         [Fact]
         public void FizzBuzzValuesForRange_Input3_ReturnFizz()
         {
@@ -68,7 +67,7 @@ namespace FizzBuzzLib.Tests
             var output = fizzBuzzClass.FizzBuzzValuesForRange(1,10);
 
             //assert
-            output.Should().Contain("1","2","Fizz","4","Buzz","6", "7", "8", "9", "10");
+            output.Should().ContainInOrder("1", "2", "Fizz", "4", "“Buzz ", "Fizz", "7", "8", "Fizz", "Buzz");
         }
         #endregion
     }
